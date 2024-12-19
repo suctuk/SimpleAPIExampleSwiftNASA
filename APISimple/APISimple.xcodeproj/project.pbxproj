@@ -13,6 +13,7 @@
 		7857B2C32D13C67700FDA87E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7857B2C22D13C67700FDA87E /* Preview Assets.xcassets */; };
 		7857B2CA2D13C70E00FDA87E /* APODStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7857B2C92D13C70E00FDA87E /* APODStruct.swift */; };
 		7857B2CE2D13C8E400FDA87E /* APODViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7857B2CD2D13C8E400FDA87E /* APODViewModel.swift */; };
+		785E564E2D13ED770083FD11 /* JSONExamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785E564D2D13ED770083FD11 /* JSONExamples.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		7857B2C22D13C67700FDA87E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7857B2C92D13C70E00FDA87E /* APODStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODStruct.swift; sourceTree = "<group>"; };
 		7857B2CD2D13C8E400FDA87E /* APODViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODViewModel.swift; sourceTree = "<group>"; };
+		785E564D2D13ED770083FD11 /* JSONExamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONExamples.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				7857B2BB2D13C67400FDA87E /* APISimpleApp.swift */,
 				7857B2BD2D13C67400FDA87E /* ContentView.swift */,
 				7857B2CD2D13C8E400FDA87E /* APODViewModel.swift */,
+				785E564D2D13ED770083FD11 /* JSONExamples.swift */,
 				7857B2C92D13C70E00FDA87E /* APODStruct.swift */,
 				7857B2BF2D13C67700FDA87E /* Assets.xcassets */,
 				7857B2C12D13C67700FDA87E /* Preview Content */,
@@ -89,6 +92,8 @@
 			dependencies = (
 			);
 			name = APISimple;
+			packageProductDependencies = (
+			);
 			productName = APISimple;
 			productReference = 7857B2B82D13C67400FDA87E /* APISimple.app */;
 			productType = "com.apple.product-type.application";
@@ -117,6 +122,9 @@
 				Base,
 			);
 			mainGroup = 7857B2AF2D13C67400FDA87E;
+			packageReferences = (
+				785E56492D13DE560083FD11 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */,
+			);
 			productRefGroup = 7857B2B92D13C67400FDA87E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -144,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7857B2CE2D13C8E400FDA87E /* APODViewModel.swift in Sources */,
+				785E564E2D13ED770083FD11 /* JSONExamples.swift in Sources */,
 				7857B2CA2D13C70E00FDA87E /* APODStruct.swift in Sources */,
 				7857B2BE2D13C67400FDA87E /* ContentView.swift in Sources */,
 				7857B2BC2D13C67400FDA87E /* APISimpleApp.swift in Sources */,
@@ -350,6 +359,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		785E56492D13DE560083FD11 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SimplyDanny/SwiftLintPlugins.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.57.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = 7857B2B02D13C67400FDA87E /* Project object */;
 }

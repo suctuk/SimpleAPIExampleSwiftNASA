@@ -27,7 +27,7 @@ class APODViewModel: ObservableObject {
             }
             
             let (data, _) = try await URLSession.shared.data(from: url)
-           print("Raw JSON Data:", String(data: data, encoding: .utf8) ?? "Could not convert data to string")
+            print("Raw JSON Data:", String(data: data, encoding: .utf8) ?? "Could not convert data to string")
 
             let decoder = JSONDecoder()
             apodData = try decoder.decode(APODResponse.self, from: data)
